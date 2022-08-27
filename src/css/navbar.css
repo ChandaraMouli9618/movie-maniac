@@ -1,0 +1,38 @@
+@font-face {
+    font-family: gotham-bold;
+    src: url("../fonts/Cera\ Pro\ Bold.otf");
+}
+
+@font-face {
+    font-family: gotham-medium;
+    src: url("../fonts/Cera\ Pro\ Medium.otf");
+}
+
+.logo{
+    font-family: "gotham-bold";
+    font-size: x-large;
+    color: #c6e2ee;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+ }
+
+.tab-button{
+    font-family: gotham-medium;
+    color: #c6e2ee;
+    font-size: large;
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.tab-button:hover{
+    transform: scale(1.1);
+    color: #09a7e4;
+    cursor: pointer;
+}

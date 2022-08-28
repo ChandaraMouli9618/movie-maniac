@@ -12,7 +12,7 @@ export default function navbar() {
           height="40"
           alt="Logo"
         />
-        <span class="align-middle">MovieZ</span>
+        <span class=" title align-middle">MovieZ</span>
       </div>
 
       <div className="tabs">
@@ -21,7 +21,19 @@ export default function navbar() {
         <div className="tab-button">Anime</div>
       </div>
       <div className="profile">
+        <Hamburger />
       </div>
     </navbar>
+  );
+}
+
+
+function Hamburger(){
+  return(
+    <div className="hamburger pe-2">
+      <div className="line"></div>
+      <div className="line"></div>
+      <div className="line"></div>
+    </div>
   );
 }

@@ -8,10 +8,15 @@
     src: url("../fonts/Cera\ Pro\ Medium.otf");
 }
 
+:root {
+    --pri-nav-col: #09a7e4;
+    --sec-nav-col: #c6e2ee;
+  }
+
 .logo{
     font-family: "gotham-bold";
     font-size: x-large;
-    color: #c6e2ee;
+    color: var(--sec-nav-col);
 }
 
 .tabs{
@@ -21,7 +26,7 @@
 
 .tab-button{
     font-family: gotham-medium;
-    color: #c6e2ee;
+    color: var(--sec-nav-col);
     font-size: large;
     margin: 1rem;
     padding-left: 1rem;
@@ -33,6 +38,42 @@
 
 .tab-button:hover{
     transform: scale(1.1);
-    color: #09a7e4;
+    color: var(--pri-nav-col);
     cursor: pointer;
+    
+}
+
+.hamburger:hover .line{
+    background-color: var(--pri-nav-col);
+}
+
+.line{
+    width: 32px;
+    height: 2px;
+    margin-top: 7px;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    background-color: var(--sec-nav-col);
+}
+
+@media (max-width: 768px) {
+    .hamburger{
+        visibility: visible;
+    }
+
+    .tabs{
+        display: none;
+    }
+
+    .line{
+        width: 28px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .hamburger{
+        visibility: hidden;
+        display: none;
+    }
 }

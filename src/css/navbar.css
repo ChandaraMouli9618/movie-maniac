@@ -28,6 +28,7 @@
     font-family: gotham-medium;
     color: var(--sec-nav-col);
     font-size: large;
+    text-align: center;
     margin: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -62,13 +63,23 @@
     }
 
     .tabs{
-        display: none;
+        display: flex;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        align-self: flex-end;
+        flex-direction: column;
+        top: 50px;
+        visibility: hidden;
+    }
+
+    .logo{
+        align-content: center;
     }
 
     .line{
         width: 28px;
     }
-
 }
 
 @media (min-width: 768px){
